@@ -1,0 +1,229 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  font-style: italic;
+
+  font-weight: bold;
+
+  display: flex;
+
+  background: indigo;
+
+  color: #fff;
+
+  animation: fadeSlideIn 1s ease-in-out;
+
+}
+
+/* Smooth professional fade-slide animation */
+
+@keyframes fadeSlideIn {
+
+  0% {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* Layout */
+
+.main-container {
+
+  display: flex;
+
+  width: 100%;
+
+}
+
+/* Sidebar */
+
+.sidebar {
+
+  width: 25%;
+
+  background: rgba(0,0,0,0.3); /* transparent overlay on indigo */
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 20px;
+
+  min-height: 100vh;
+
+  position: fixed;
+
+  animation: fadeSlideIn 1.2s ease-in-out;
+
+}
+
+.sidebar h2, .sidebar p, .sidebar ul li a {
+
+  animation: fadeSlideIn 1.5s ease-in-out;
+
+}
+
+/* Profile Image */
+
+.profile-img {
+
+  width: 120px;
+
+  height: 120px;
+
+  border-radius: 50%;
+
+  border: 3px solid #fff;
+
+  margin-bottom: 15px;
+
+  animation: fadeSlideIn 1.8s ease-in-out;
+
+}
+
+/* Links */
+
+.sidebar ul li a {
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  transition: color 0.3s;
+
+}
+
+.sidebar ul li a:hover {
+
+  color: #1abc9c;
+
+}
+
+/* Content */
+
+.content {
+
+  margin-left: 25%;
+
+  padding: 30px;
+
+  width: 75%;
+
+  animation: fadeSlideIn 1.2s ease-in-out;
+
+}
+
+h1 {
+
+  margin-bottom: 15px;
+
+  border-bottom: 2px solid #1abc9c;
+
+  display: inline-block;
+
+}
+
+/* Skills */
+
+.skill-cards {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+}
+
+.card {
+
+  background: rgba(255,255,255,0.1);
+
+  padding: 15px 20px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  color: white;
+
+  transition: transform 0.3s, background 0.3s;
+
+  animation: fadeSlideIn 1.3s ease-in-out;
+
+}
+
+.card:hover {
+
+  background: #1abc9c;
+
+  color: white;
+
+  transform: scale(1.05);
+
+}
+
+/* Projects */
+
+.project-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 15px;
+
+}
+
+.project-card {
+
+  background: rgba(255,255,255,0.1);
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  transition: transform 0.3s, border-left 0.3s;
+
+  animation: fadeSlideIn 1.4s ease-in-out;
+
+}
+
+.project-card:hover {
+
+  transform: translateY(-5px);
+
+  border-left: 5px solid #1abc9c;
+
+}
